@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Refuge — Vétérinaire de garde, toiletteur mobile et pension d'urgence au Québec</title>
+<meta name="description" content="Trouvez en quelques secondes un vétérinaire de garde, un toiletteur mobile ou une pension d'urgence près de chez vous, partout au Québec.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a href="index.html" class="logo">Refuge<span>.</span></a>
+    <nav class="site-nav">
+      <a href="#villes">Villes</a>
+      <a href="#services">Services</a>
+      <a href="#">Ajouter mon commerce</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="kicker">Urgence animalière — Québec</span>
+    <h1>Un soin pour votre animal,<br>maintenant, pas demain.</h1>
+    <p class="lead">Vétérinaires de garde, toiletteurs mobiles et pensions d'urgence, listés par ville avec coordonnées, horaires réels et prix — pour agir vite quand ça compte.</p>
+
+    <div class="finder">
+      <h2>Trouver un service près de vous</h2>
+      <p class="finder-sub">Choisissez un service et une ville pour voir les disponibilités.</p>
+      <form class="finder-row" onsubmit="return goToListing(event)">
+        <select id="service" required>
+          <option value="" disabled selected>Service recherché</option>
+          <option value="veterinaire-urgence">Vétérinaire de garde</option>
+          <option value="toiletteur-mobile">Toiletteur mobile</option>
+          <option value="pension-urgence">Pension d'urgence</option>
+        </select>
+        <select id="ville" required>
+          <option value="" disabled selected>Ville</option>
+          <option value="montreal">Montréal</option>
+          <option value="quebec">Québec</option>
+          <option value="sherbrooke">Sherbrooke</option>
+          <option value="gatineau">Gatineau</option>
+        </select>
+        <button type="submit">Voir les options</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <h2>Trois urgences, trois réponses claires</h2>
+    <div class="grid">
+      <a class="service-card" href="veterinaire-urgence-montreal.html">
+        <span class="tag">Santé</span>
+        <h3>Vétérinaire de garde</h3>
+        <p>Cliniques ouvertes en dehors des heures normales, avec numéro direct et frais d'urgence estimés.</p>
+      </a>
+      <a class="service-card" href="#">
+        <span class="tag">Entretien</span>
+        <h3>Toiletteur mobile</h3>
+        <p>Toilettage à domicile pour les animaux stressés, âgés ou pour les propriétaires sans transport.</p>
+      </a>
+      <a class="service-card" href="#">
+        <span class="tag">Hébergement</span>
+        <h3>Pension d'urgence</h3>
+        <p>Une place pour votre animal en cas d'imprévu — hospitalisation, déménagement soudain, urgence familiale.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cities" id="villes">
+  <div class="wrap">
+    <h2>Villes couvertes</h2>
+    <div class="city-list">
+      <a href="veterinaire-urgence-montreal.html">Montréal <small>3 services listés</small></a>
+      <a href="#">Québec <small>Bientôt disponible</small></a>
+      <a href="#">Sherbrooke <small>Bientôt disponible</small></a>
+      <a href="#">Gatineau <small>Bientôt disponible</small></a>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    Refuge — annuaire indépendant de services d'urgence pour animaux au Québec. Les informations affichées proviennent des commerces listés ; vérifiez toujours par téléphone en cas d'urgence réelle.
+  </div>
+</footer>
+
+<script>
+function goToListing(e) {
+  e.preventDefault();
+  const service = document.getElementById('service').value;
+  const ville = document.getElementById('ville').value;
+  // Pour l'instant, une seule page existe réellement : montre-la si dispo, sinon message.
+  if (service === 'veterinaire-urgence' && ville === 'montreal') {
+    window.location.href = 'veterinaire-urgence-montreal.html';
+  } else {
+    alert('Cette ville/service arrive bientôt sur le site. Montréal – Vétérinaire de garde est déjà en ligne.');
+  }
+  return false;
+}
+</script>
+
+</body>
+</html>
