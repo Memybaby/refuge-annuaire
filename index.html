@@ -16,7 +16,6 @@
     <a href="index.html" class="logo">Refuge<span>.</span></a>
     <nav class="site-nav">
       <a href="#villes">Villes</a>
-      <a href="#services">Services</a>
       <a href="#">Ajouter mon commerce</a>
     </nav>
   </div>
@@ -26,31 +25,41 @@
   <div class="wrap">
     <span class="kicker">Urgence animalière — Québec</span>
     <h1>Un soin pour votre animal,<br>maintenant, pas demain.</h1>
-    <p class="lead">Vétérinaires de garde, toiletteurs mobiles et pensions d'urgence, listés par ville avec coordonnées, horaires réels et prix — pour agir vite quand ça compte.</p>
+    <p class="lead">Vétérinaires de garde, toiletteurs mobiles et pensions d'urgence, listés par ville avec coordonnées et horaires vérifiés — pour agir vite quand ça compte.</p>
+  </div>
+</section>
 
-    <div class="finder">
-      <h2>Trouver un service près de vous</h2>
-      <p class="finder-sub">Choisissez un service et une ville pour voir les disponibilités.</p>
-      <form class="finder-row" onsubmit="return goToListing(event)">
-        <select id="service" required>
-          <option value="" disabled selected>Service recherché</option>
-          <option value="veterinaire-urgence">Vétérinaire de garde</option>
-          <option value="toiletteur-mobile">Toiletteur mobile</option>
-          <option value="pension-urgence">Pension d'urgence</option>
-        </select>
-        <select id="ville" required>
-          <option value="" disabled selected>Ville</option>
-          <option value="montreal">Montréal</option>
-          <option value="quebec">Québec</option>
-          <option value="sherbrooke">Sherbrooke</option>
-          <option value="gatineau">Gatineau</option>
-          <option value="laval">Laval</option>
-          <option value="longueuil">Longueuil</option>
-          <option value="trois-rivieres">Trois-Rivières</option>
-          <option value="saguenay">Saguenay</option>
-        </select>
-        <button type="submit">Voir les options</button>
-      </form>
+<section class="how-it-works">
+  <div class="wrap">
+    <div class="steps">
+      <div class="step">
+        <span class="num">1</span>
+        <p>Choisissez votre ville dans la liste ci-dessous</p>
+      </div>
+      <div class="step">
+        <span class="num">2</span>
+        <p>Choisissez le service dont vous avez besoin</p>
+      </div>
+      <div class="step">
+        <span class="num">3</span>
+        <p>Appelez directement — un seul bouton à toucher</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cities" id="villes">
+  <div class="wrap">
+    <h2>Choisissez votre ville</h2>
+    <div class="city-grid-v2">
+      <a href="ville-montreal.html"><span class="pin">📍</span>Montréal</a>
+      <a href="ville-quebec.html"><span class="pin">📍</span>Québec</a>
+      <a href="ville-sherbrooke.html"><span class="pin">📍</span>Sherbrooke</a>
+      <a href="ville-gatineau.html"><span class="pin">📍</span>Gatineau</a>
+      <a href="ville-laval.html"><span class="pin">📍</span>Laval</a>
+      <a href="ville-longueuil.html"><span class="pin">📍</span>Longueuil</a>
+      <a href="ville-trois-rivieres.html"><span class="pin">📍</span>Trois-Rivières</a>
+      <a href="ville-saguenay.html"><span class="pin">📍</span>Saguenay</a>
     </div>
   </div>
 </section>
@@ -59,37 +68,21 @@
   <div class="wrap">
     <h2>Trois urgences, trois réponses claires</h2>
     <div class="grid">
-      <a class="service-card" href="veterinaire-urgence-quebec.html">
-        <span class="tag">Santé</span>
+      <div class="service-card">
+        <span class="icon-badge">🚑</span>
         <h3>Vétérinaire de garde</h3>
         <p>Cliniques ouvertes en dehors des heures normales, avec numéro direct et horaires vérifiés.</p>
-      </a>
-      <a class="service-card" href="toiletteur-mobile-quebec.html">
-        <span class="tag">Entretien</span>
+      </div>
+      <div class="service-card">
+        <span class="icon-badge">🛁</span>
         <h3>Toiletteur mobile</h3>
         <p>Toilettage à domicile pour les animaux stressés, âgés ou pour les propriétaires sans transport.</p>
-      </a>
-      <a class="service-card" href="pension-urgence-quebec.html">
-        <span class="tag">Hébergement</span>
+      </div>
+      <div class="service-card">
+        <span class="icon-badge">🏠</span>
         <h3>Pension d'urgence</h3>
         <p>Une place pour votre animal en cas d'imprévu — hospitalisation, déménagement soudain, urgence familiale.</p>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="cities" id="villes">
-  <div class="wrap">
-    <h2>Villes couvertes</h2>
-    <div class="city-list">
-      <a href="veterinaire-urgence-montreal.html">Montréal <small>3 services listés</small></a>
-      <a href="veterinaire-urgence-quebec.html">Québec <small>3 services listés</small></a>
-      <a href="veterinaire-urgence-sherbrooke.html">Sherbrooke <small>3 services listés</small></a>
-      <a href="veterinaire-urgence-gatineau.html">Gatineau <small>3 services listés</small></a>
-      <a href="veterinaire-urgence-laval.html">Laval <small>3 services listés</small></a>
-      <a href="veterinaire-urgence-longueuil.html">Longueuil <small>3 services listés</small></a>
-      <a href="veterinaire-urgence-trois-rivieres.html">Trois-Rivières <small>3 services listés</small></a>
-      <a href="veterinaire-urgence-saguenay.html">Saguenay <small>3 services listés</small></a>
+      </div>
     </div>
   </div>
 </section>
@@ -99,31 +92,6 @@
     Refuge — annuaire indépendant de services d'urgence pour animaux au Québec. Les informations affichées proviennent des commerces listés ; vérifiez toujours par téléphone en cas d'urgence réelle.
   </div>
 </footer>
-
-<script>
-function goToListing(e) {
-  e.preventDefault();
-  const service = document.getElementById('service').value;
-  const ville = document.getElementById('ville').value;
-  const page = service + '-' + ville + '.html';
-  const available = [
-    'veterinaire-urgence-montreal.html','toiletteur-mobile-montreal.html','pension-urgence-montreal.html',
-    'veterinaire-urgence-quebec.html','toiletteur-mobile-quebec.html','pension-urgence-quebec.html',
-    'veterinaire-urgence-sherbrooke.html','toiletteur-mobile-sherbrooke.html','pension-urgence-sherbrooke.html',
-    'veterinaire-urgence-gatineau.html','toiletteur-mobile-gatineau.html','pension-urgence-gatineau.html',
-    'veterinaire-urgence-laval.html','toiletteur-mobile-laval.html','pension-urgence-laval.html',
-    'veterinaire-urgence-longueuil.html','toiletteur-mobile-longueuil.html','pension-urgence-longueuil.html',
-    'veterinaire-urgence-trois-rivieres.html','toiletteur-mobile-trois-rivieres.html','pension-urgence-trois-rivieres.html',
-    'veterinaire-urgence-saguenay.html','toiletteur-mobile-saguenay.html','pension-urgence-saguenay.html'
-  ];
-  if (available.includes(page)) {
-    window.location.href = page;
-  } else {
-    alert('Cette combinaison arrive bientôt sur le site.');
-  }
-  return false;
-}
-</script>
 
 </body>
 </html>

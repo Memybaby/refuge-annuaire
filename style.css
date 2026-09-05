@@ -284,3 +284,89 @@ footer.site {
   color: var(--ink-soft);
   font-size: 0.88rem;
 }
+
+/* ============================================
+   Amélioration visuelle v2 — icônes, cartes ville, page hub
+   ============================================ */
+
+.icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  background: var(--bg);
+}
+.service-card .icon-badge { background: #EFEDE6; }
+
+/* City grid v2 — bigger touch targets, icon, clearer */
+.city-grid-v2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+}
+.city-grid-v2 a {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 16px;
+  text-decoration: none;
+  color: var(--primary);
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.city-grid-v2 a:hover { border-color: var(--primary); transform: translateY(-2px); }
+.city-grid-v2 a .pin { display: block; font-size: 1.6rem; margin-bottom: 6px; }
+
+/* How it works */
+.how-it-works {
+  padding: 8px 0 48px;
+}
+.how-it-works .steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 24px;
+}
+.step {
+  text-align: center;
+  padding: 10px;
+}
+.step .num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--urgent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin: 0 auto 10px;
+  font-family: 'Fraunces', serif;
+}
+.step p { font-size: 0.9rem; margin: 0 auto; max-width: 20ch; }
+
+@media (max-width: 720px) {
+  .how-it-works .steps { grid-template-columns: 1fr; }
+}
+
+/* Ville hub page */
+.ville-hero {
+  padding: 44px 0 12px;
+}
+.ville-hero .kicker { color: var(--urgent); font-weight: 600; font-size: 0.9rem; }
+.back-link {
+  display: inline-block;
+  margin: 18px 0 0;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  text-decoration: none;
+}
