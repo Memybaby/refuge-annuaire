@@ -55,17 +55,17 @@
   <div class="wrap">
     <h2>Trois urgences, trois réponses claires</h2>
     <div class="grid">
-      <a class="service-card" href="veterinaire-urgence-montreal.html">
+      <a class="service-card" href="veterinaire-urgence-quebec.html">
         <span class="tag">Santé</span>
         <h3>Vétérinaire de garde</h3>
-        <p>Cliniques ouvertes en dehors des heures normales, avec numéro direct et frais d'urgence estimés.</p>
+        <p>Cliniques ouvertes en dehors des heures normales, avec numéro direct et horaires vérifiés.</p>
       </a>
-      <a class="service-card" href="#">
+      <a class="service-card" href="toiletteur-mobile-quebec.html">
         <span class="tag">Entretien</span>
         <h3>Toiletteur mobile</h3>
         <p>Toilettage à domicile pour les animaux stressés, âgés ou pour les propriétaires sans transport.</p>
       </a>
-      <a class="service-card" href="#">
+      <a class="service-card" href="pension-urgence-quebec.html">
         <span class="tag">Hébergement</span>
         <h3>Pension d'urgence</h3>
         <p>Une place pour votre animal en cas d'imprévu — hospitalisation, déménagement soudain, urgence familiale.</p>
@@ -78,10 +78,10 @@
   <div class="wrap">
     <h2>Villes couvertes</h2>
     <div class="city-list">
-      <a href="veterinaire-urgence-montreal.html">Montréal <small>3 services listés</small></a>
-      <a href="#">Québec <small>Bientôt disponible</small></a>
-      <a href="#">Sherbrooke <small>Bientôt disponible</small></a>
-      <a href="#">Gatineau <small>Bientôt disponible</small></a>
+      <a href="veterinaire-urgence-montreal.html">Montréal <small>Vétérinaire de garde</small></a>
+      <a href="veterinaire-urgence-quebec.html">Québec <small>3 services listés</small></a>
+      <a href="veterinaire-urgence-sherbrooke.html">Sherbrooke <small>3 services listés</small></a>
+      <a href="veterinaire-urgence-gatineau.html">Gatineau <small>3 services listés</small></a>
     </div>
   </div>
 </section>
@@ -97,11 +97,17 @@ function goToListing(e) {
   e.preventDefault();
   const service = document.getElementById('service').value;
   const ville = document.getElementById('ville').value;
-  // Pour l'instant, une seule page existe réellement : montre-la si dispo, sinon message.
-  if (service === 'veterinaire-urgence' && ville === 'montreal') {
-    window.location.href = 'veterinaire-urgence-montreal.html';
+  const page = service + '-' + ville + '.html';
+  const available = [
+    'veterinaire-urgence-montreal.html',
+    'veterinaire-urgence-quebec.html','toiletteur-mobile-quebec.html','pension-urgence-quebec.html',
+    'veterinaire-urgence-sherbrooke.html','toiletteur-mobile-sherbrooke.html','pension-urgence-sherbrooke.html',
+    'veterinaire-urgence-gatineau.html','toiletteur-mobile-gatineau.html','pension-urgence-gatineau.html'
+  ];
+  if (available.includes(page)) {
+    window.location.href = page;
   } else {
-    alert('Cette ville/service arrive bientôt sur le site. Montréal – Vétérinaire de garde est déjà en ligne.');
+    alert('Cette combinaison arrive bientôt sur le site.');
   }
   return false;
 }
