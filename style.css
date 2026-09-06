@@ -66,6 +66,8 @@ header.site .wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .logo {
   font-family: 'Fraunces', serif;
@@ -75,13 +77,44 @@ header.site .wrap {
   text-decoration: none;
 }
 .logo span { color: var(--urgent); }
+
+.logo-block {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  text-decoration: none;
+}
+.logo-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 1.35rem;
+  color: var(--primary);
+}
+.logo-title .dot { color: var(--urgent); }
+.logo-tagline {
+  font-size: 0.66rem;
+  color: var(--ink-soft);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+nav.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
 nav.site-nav a {
   text-decoration: none;
-  color: var(--ink-soft);
-  margin-left: 22px;
-  font-size: 0.95rem;
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 7px 14px;
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+  white-space: nowrap;
+  background: #EAF0EF;
 }
-nav.site-nav a:hover { color: var(--primary); }
+nav.site-nav a:hover { color: #fff; background: var(--primary); }
 
 /* ---------- Hero ---------- */
 .hero {

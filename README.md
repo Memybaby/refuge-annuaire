@@ -1,4 +1,4 @@
-# Refuge — annuaire d'urgence pour animaux (Québec)
+# Refuge Animalier — annuaire d'urgence pour animaux (Québec)
 
 ## Ce qui est prêt
 - `index.html` — page d'accueil (recherche par service + ville, 4 villes de lancement)
