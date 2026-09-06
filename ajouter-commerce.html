@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajouter mon commerce — Refuge</title>
+<meta name="description" content="Faites ajouter votre clinique vétérinaire, service de toilettage mobile ou pension d'urgence au répertoire Refuge.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .form-page { max-width: 560px; }
+  .form-group { margin-bottom: 18px; }
+  .form-group label { display:block; font-weight:600; font-size:0.92rem; margin-bottom:6px; color: var(--ink); }
+  .form-group input[type=text], .form-group input[type=email], .form-group input[type=tel], .form-group select, .form-group textarea {
+    width: 100%; padding: 12px 14px; border-radius: 7px; border: 1px solid var(--line);
+    font-family: inherit; font-size: 0.98rem; background: #fff; color: var(--ink);
+  }
+  .radio-group { display:flex; flex-direction:column; gap:8px; }
+  .radio-group label { display:flex; align-items:center; gap:8px; font-weight:400; font-size:0.98rem; }
+  .radio-group input { width:auto; }
+  .required { color: var(--urgent); }
+  .notice-box {
+    background: #FBF3E9; border: 1px solid #EFD9B8; border-radius: var(--radius);
+    padding: 16px 18px; font-size: 0.9rem; margin-bottom: 28px; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a href="index.html" class="logo">Refuge<span>.</span></a>
+    <nav class="site-nav">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="ajouter-commerce.html">Ajouter mon commerce</a>
+      <a href="contact.html">Nous joindre</a>
+    </nav>
+  </div>
+</header>
+
+<section class="ville-hero">
+  <div class="wrap">
+    <span class="kicker">Ajouter mon commerce</span>
+    <h1>Faites ajouter votre commerce</h1>
+    <p class="lead">Refuge liste uniquement des vétérinaires de garde, des toiletteurs mobiles et des pensions d'urgence.</p>
+  </div>
+</section>
+
+<section style="padding: 8px 0 64px;">
+  <div class="wrap form-page">
+
+    <div class="notice-box">
+      <strong>Chaque soumission est vérifiée manuellement</strong> avant publication, pour garantir la fiabilité du répertoire. Le délai de traitement peut aller jusqu'à <strong>14 jours ouvrables</strong>. Nous acceptons uniquement les commerces offrant l'un des 3 services suivants.
+    </div>
+
+    <form id="commerce-form">
+
+      <div class="form-group">
+        <label>Nom du commerce <span class="required">*</span></label>
+        <input type="text" id="nom" required>
+      </div>
+
+      <div class="form-group">
+        <label>Service offert <span class="required">*</span></label>
+        <div class="radio-group">
+          <label><input type="radio" name="service" value="Vétérinaire de garde" required> Vétérinaire de garde</label>
+          <label><input type="radio" name="service" value="Toiletteur mobile" required> Toiletteur mobile</label>
+          <label><input type="radio" name="service" value="Pension d'urgence" required> Pension d'urgence</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Ville <span class="required">*</span></label>
+        <select id="ville" required>
+          <option value="" disabled selected>Choisir une ville</option>
+          <option>Montréal</option>
+          <option>Québec</option>
+          <option>Sherbrooke</option>
+          <option>Gatineau</option>
+          <option>Laval</option>
+          <option>Longueuil</option>
+          <option>Trois-Rivières</option>
+          <option>Saguenay</option>
+          <option>Autre (précisez dans les détails)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Adresse complète <span class="required">*</span></label>
+        <input type="text" id="adresse" required>
+      </div>
+
+      <div class="form-group">
+        <label>Téléphone <span class="required">*</span></label>
+        <input type="tel" id="telephone" required>
+      </div>
+
+      <div class="form-group">
+        <label>Horaires</label>
+        <input type="text" id="horaires" placeholder="Ex. : 24h/24, 7j/7">
+      </div>
+
+      <div class="form-group">
+        <label>Site web (si disponible)</label>
+        <input type="text" id="siteweb">
+      </div>
+
+      <div class="form-group">
+        <label>Votre courriel (pour qu'on puisse vous répondre) <span class="required">*</span></label>
+        <input type="email" id="courriel" required>
+      </div>
+
+      <div class="form-group">
+        <label>Détails additionnels</label>
+        <textarea id="details" rows="4"></textarea>
+      </div>
+
+      <button type="submit" class="btn call" style="border:none; cursor:pointer; font-size:1rem;">Envoyer la demande</button>
+    </form>
+
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    Refuge — annuaire indépendant de services d'urgence pour animaux au Québec.
+  </div>
+</footer>
+
+<script>
+document.getElementById('commerce-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const nom = document.getElementById('nom').value;
+  const service = document.querySelector('input[name="service"]:checked').value;
+  const ville = document.getElementById('ville').value;
+  const adresse = document.getElementById('adresse').value;
+  const telephone = document.getElementById('telephone').value;
+  const horaires = document.getElementById('horaires').value || 'Non précisé';
+  const siteweb = document.getElementById('siteweb').value || 'Non précisé';
+  const courriel = document.getElementById('courriel').value;
+  const details = document.getElementById('details').value || 'Aucun';
+
+  const subject = 'Nouvelle soumission de commerce — ' + nom;
+  const body =
+    'Nom du commerce : ' + nom + '\n' +
+    'Service offert : ' + service + '\n' +
+    'Ville : ' + ville + '\n' +
+    'Adresse : ' + adresse + '\n' +
+    'Téléphone : ' + telephone + '\n' +
+    'Horaires : ' + horaires + '\n' +
+    'Site web : ' + siteweb + '\n' +
+    'Courriel du soumissionnaire : ' + courriel + '\n' +
+    'Détails : ' + details;
+
+  const mailtoLink = 'mailto:info.refugeanimalier@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  window.location.href = mailtoLink;
+});
+</script>
+
+</body>
+</html>
