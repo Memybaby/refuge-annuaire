@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-368QCVTNPE"></script>
@@ -12,9 +12,9 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ajouter mon commerce — Refuge Animalier – Annuaire</title>
-<meta name="description" content="Faites ajouter votre clinique vétérinaire, salon ou service de toilettage, pension d'urgence ou parc à chiens au répertoire Refuge Animalier.">
-<link rel="canonical" href="https://www.refugeanimalier.ca/ajouter-commerce.html">
+<title>Add My Business — Refuge Animalier – Directory</title>
+<meta name="description" content="Add your veterinary clinic, grooming service, emergency boarding or dog park to the Refuge Animalier directory.">
+<link rel="canonical" href="https://www.refugeanimalier.ca/ajouter-commerce-en.html">
 <link rel="alternate" hreflang="fr-ca" href="https://www.refugeanimalier.ca/ajouter-commerce.html">
 <link rel="alternate" hreflang="en-ca" href="https://www.refugeanimalier.ca/ajouter-commerce-en.html">
 <link rel="alternate" hreflang="x-default" href="https://www.refugeanimalier.ca/ajouter-commerce.html">
@@ -43,20 +43,25 @@
 
 <header class="site">
   <div class="wrap">
-    <a href="index.html" class="logo-block">
+    <a href="index-en.html" class="logo-block">
       <span class="logo-title">Refuge Animalier<span class="dot">.</span></span>
-      <span class="logo-tagline">Annuaire d'urgence pour animaux</span>
+      <span class="logo-tagline">Emergency Pet Directory</span>
     </a>
     <nav class="site-nav">
-      <a href="index.html">Accueil</a>
-      <a href="services.html">Services</a>
-      <a href="ajouter-commerce.html">Ajouter mon commerce</a>
-      <a href="contact.html">Nous joindre</a>
-      <a href="ajouter-commerce-en.html" style="opacity:.7">EN</a>
+      <a href="index-en.html">Home</a>
+      <a href="services-en.html">Services</a>
+      <a href="ajouter-commerce-en.html">Add my business</a>
+      <a href="contact.html">Contact</a>
+      <a href="ajouter-commerce.html" style="opacity:.7">FR</a>
+    </nav>
+  </div>
+</header>
+
+<section class="ville-hero">
   <div class="wrap">
-    <span class="kicker">Ajouter mon commerce</span>
-    <h1>Faites ajouter votre commerce</h1>
-    <p class="lead">Refuge Animalier liste des vétérinaires (garde et rendez-vous régulier), des toiletteurs (mobiles et en salon), des pensions d'urgence et des parcs à chiens.</p>
+    <span class="kicker">Add my business</span>
+    <h1>Get your business listed</h1>
+    <p class="lead">Refuge Animalier lists veterinarians (emergency and regular), groomers (mobile and salon), emergency boarding and dog parks.</p>
   </div>
 </section>
 
@@ -64,34 +69,34 @@
   <div class="wrap form-page">
 
     <div class="notice-box">
-      <strong>Chaque soumission est vérifiée manuellement</strong> avant publication, pour garantir la fiabilité du répertoire. Le délai de traitement peut aller jusqu'à <strong>14 jours ouvrables</strong>. Nous acceptons uniquement les commerces offrant l'un des services suivants.
+      <strong>Every submission is manually reviewed</strong> before publishing, to keep the directory reliable. Processing can take up to <strong>14 business days</strong>. We only accept businesses offering one of the services below.
       <br><br>
-      💡 Vous voulez apparaître <strong>en premier</strong> sur votre page ? Découvrez notre <a href="devenir-vedette.html">offre Vedette</a>.
+      💡 Want to appear <strong>first</strong> on your page? Check out our <a href="devenir-vedette-en.html">Featured listing offer</a>.
     </div>
 
     <form id="commerce-form">
 
       <div class="form-group">
-        <label>Nom du commerce <span class="required">*</span></label>
+        <label>Business name <span class="required">*</span></label>
         <input type="text" id="nom" required>
       </div>
 
       <div class="form-group">
-        <label>Service offert <span class="required">*</span></label>
+        <label>Service offered <span class="required">*</span></label>
         <div class="radio-group">
-          <label><input type="radio" name="service" value="Vétérinaire de garde" required> Vétérinaire de garde</label>
-          <label><input type="radio" name="service" value="Vétérinaire (rendez-vous régulier)" required> Vétérinaire (rendez-vous régulier)</label>
-          <label><input type="radio" name="service" value="Toiletteur mobile" required> Toiletteur mobile</label>
-          <label><input type="radio" name="service" value="Toilettage en salon" required> Toilettage en salon</label>
-          <label><input type="radio" name="service" value="Pension d'urgence" required> Pension d'urgence</label>
-          <label><input type="radio" name="service" value="Parc à chiens" required> Parc à chiens</label>
+          <label><input type="radio" name="service" value="Emergency Vet" required> Emergency Vet</label>
+          <label><input type="radio" name="service" value="Veterinarian (regular appointment)" required> Veterinarian (regular appointment)</label>
+          <label><input type="radio" name="service" value="Mobile Groomer" required> Mobile Groomer</label>
+          <label><input type="radio" name="service" value="Pet Grooming Salon" required> Pet Grooming Salon</label>
+          <label><input type="radio" name="service" value="Emergency Boarding" required> Emergency Boarding</label>
+          <label><input type="radio" name="service" value="Dog Park" required> Dog Park</label>
         </div>
       </div>
 
       <div class="form-group">
-        <label>Ville <span class="required">*</span></label>
+        <label>City <span class="required">*</span></label>
         <select id="ville" required>
-          <option value="" disabled selected>Choisir une ville</option>
+          <option value="" disabled selected>Choose a city</option>
           <option>Montréal</option>
           <option>Québec</option>
           <option>Sherbrooke</option>
@@ -114,41 +119,41 @@
           <option>Salaberry-de-Valleyfield</option>
           <option>Rouyn-Noranda</option>
           <option>Sorel-Tracy</option>
-          <option>Autre (précisez dans les détails)</option>
+          <option>Other (specify in details)</option>
         </select>
       </div>
 
       <div class="form-group">
-        <label>Adresse complète <span class="required">*</span></label>
+        <label>Full address <span class="required">*</span></label>
         <input type="text" id="adresse" required>
       </div>
 
       <div class="form-group">
-        <label>Téléphone <span class="required">*</span></label>
+        <label>Phone <span class="required">*</span></label>
         <input type="tel" id="telephone" required>
       </div>
 
       <div class="form-group">
-        <label>Horaires</label>
-        <input type="text" id="horaires" placeholder="Ex. : 24h/24, 7j/7">
+        <label>Hours</label>
+        <input type="text" id="horaires" placeholder="E.g.: 24/7">
       </div>
 
       <div class="form-group">
-        <label>Site web (si disponible)</label>
+        <label>Website (if available)</label>
         <input type="text" id="siteweb">
       </div>
 
       <div class="form-group">
-        <label>Votre courriel (pour qu'on puisse vous répondre) <span class="required">*</span></label>
+        <label>Your email (so we can reply) <span class="required">*</span></label>
         <input type="email" id="courriel" required>
       </div>
 
       <div class="form-group">
-        <label>Détails additionnels</label>
+        <label>Additional details</label>
         <textarea id="details" rows="4"></textarea>
       </div>
 
-      <button type="submit" class="btn call" style="border:none; cursor:pointer; font-size:1rem;">Envoyer la demande</button>
+      <button type="submit" class="btn call" style="border:none; cursor:pointer; font-size:1rem;">Submit request</button>
     </form>
 
   </div>
@@ -156,7 +161,7 @@
 
 <footer class="site">
   <div class="wrap">
-    Refuge Animalier — annuaire indépendant de services d'urgence pour animaux au Québec.
+    Refuge Animalier — independent directory of emergency pet services in Quebec.
   </div>
 </footer>
 
@@ -168,22 +173,22 @@ document.getElementById('commerce-form').addEventListener('submit', function(e) 
   const ville = document.getElementById('ville').value;
   const adresse = document.getElementById('adresse').value;
   const telephone = document.getElementById('telephone').value;
-  const horaires = document.getElementById('horaires').value || 'Non précisé';
-  const siteweb = document.getElementById('siteweb').value || 'Non précisé';
+  const horaires = document.getElementById('horaires').value || 'Not specified';
+  const siteweb = document.getElementById('siteweb').value || 'Not specified';
   const courriel = document.getElementById('courriel').value;
-  const details = document.getElementById('details').value || 'Aucun';
+  const details = document.getElementById('details').value || 'None';
 
-  const subject = 'Nouvelle soumission de commerce — ' + nom;
+  const subject = 'New business submission — ' + nom;
   const body =
-    'Nom du commerce : ' + nom + '\n' +
-    'Service offert : ' + service + '\n' +
-    'Ville : ' + ville + '\n' +
-    'Adresse : ' + adresse + '\n' +
-    'Téléphone : ' + telephone + '\n' +
-    'Horaires : ' + horaires + '\n' +
-    'Site web : ' + siteweb + '\n' +
-    'Courriel du soumissionnaire : ' + courriel + '\n' +
-    'Détails : ' + details;
+    'Business name: ' + nom + '\n' +
+    'Service offered: ' + service + '\n' +
+    'City: ' + ville + '\n' +
+    'Address: ' + adresse + '\n' +
+    'Phone: ' + telephone + '\n' +
+    'Hours: ' + horaires + '\n' +
+    'Website: ' + siteweb + '\n' +
+    'Submitter email: ' + courriel + '\n' +
+    'Details: ' + details;
 
   const mailtoLink = 'mailto:info.refugeanimalier@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
   window.location.href = mailtoLink;

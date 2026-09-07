@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-368QCVTNPE"></script>
@@ -12,9 +12,9 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Devenir vedette — Refuge Animalier – Annuaire</title>
-<meta name="description" content="Faites passer votre commerce en premier sur votre page de ville pour 15$/mois. Badge vedette, visibilité prioritaire.">
-<link rel="canonical" href="https://www.refugeanimalier.ca/devenir-vedette.html">
+<title>Featured Listing — Refuge Animalier – Directory</title>
+<meta name="description" content="Get your business featured first on your city page for $15/month. Featured badge, priority visibility.">
+<link rel="canonical" href="https://www.refugeanimalier.ca/devenir-vedette-en.html">
 <link rel="alternate" hreflang="fr-ca" href="https://www.refugeanimalier.ca/devenir-vedette.html">
 <link rel="alternate" hreflang="en-ca" href="https://www.refugeanimalier.ca/devenir-vedette-en.html">
 <link rel="alternate" hreflang="x-default" href="https://www.refugeanimalier.ca/devenir-vedette.html">
@@ -53,43 +53,48 @@
 
 <header class="site">
   <div class="wrap">
-    <a href="index.html" class="logo-block">
+    <a href="index-en.html" class="logo-block">
       <span class="logo-title">Refuge Animalier<span class="dot">.</span></span>
-      <span class="logo-tagline">Annuaire d'urgence pour animaux</span>
+      <span class="logo-tagline">Emergency Pet Directory</span>
     </a>
     <nav class="site-nav">
-      <a href="index.html">Accueil</a>
-      <a href="services.html">Services</a>
-      <a href="ajouter-commerce.html">Ajouter mon commerce</a>
-      <a href="contact.html">Nous joindre</a>
-      <a href="devenir-vedette-en.html" style="opacity:.7">EN</a>
+      <a href="index-en.html">Home</a>
+      <a href="services-en.html">Services</a>
+      <a href="ajouter-commerce-en.html">Add my business</a>
+      <a href="contact.html">Contact</a>
+      <a href="devenir-vedette.html" style="opacity:.7">FR</a>
+    </nav>
+  </div>
+</header>
+
+<section class="ville-hero">
   <div class="wrap">
-    <span class="kicker">Pour les commerces</span>
-    <h1>Passez en premier sur votre page de ville</h1>
-    <p class="lead">Un badge vedette et la première position, là où les gens cherchent activement votre service.</p>
+    <span class="kicker">For businesses</span>
+    <h1>Get top placement on your city page</h1>
+    <p class="lead">A featured badge and the top spot, right where people are actively searching for your service.</p>
   </div>
 </section>
 
 <section style="padding: 8px 0 64px;">
   <div class="wrap vedette-box">
 
-    <p class="vedette-price">15$ <span>/ mois, par ville et par catégorie</span></p>
+    <p class="vedette-price">$15 <span>/ month, per city and category</span></p>
 
     <ul class="vedette-list">
-      <li>Votre fiche affichée <strong>en tout premier</strong> sur votre page de ville et catégorie (ex. Vétérinaire de garde à Montréal)</li>
-      <li>Badge <strong>⭐ Vedette</strong> qui distingue visuellement votre fiche des autres</li>
-      <li>Mise en valeur avec un encadré doré, difficile à manquer</li>
-      <li>Sans engagement — annulez en tout temps</li>
+      <li>Your listing shown <strong>first</strong> on your city and category page (e.g. Emergency Vet in Montreal)</li>
+      <li><strong>⭐ Featured</strong> badge that visually stands out from other listings</li>
+      <li>Highlighted with a gold border — impossible to miss</li>
+      <li>No commitment — cancel anytime</li>
     </ul>
 
-    <p>Abonnez-vous ci-dessous — le paiement de 15$ sera prélevé automatiquement chaque mois via PayPal. Une fois confirmé, écrivez-nous pour nous indiquer votre commerce, votre ville et votre catégorie.</p>
+    <p>Subscribe below — the $15 payment will be charged automatically each month via PayPal. Once confirmed, fill out the form to tell us about your business, city and category.</p>
 
     <div id="paypal-button-container-P-6G2763408Y986440XNKPBQBI" style="max-width:250px; margin-top:20px;"></div>
 
-    <p style="margin-top:24px;">Une fois votre abonnement confirmé, remplissez ce court formulaire pour nous indiquer votre commerce, votre ville et votre catégorie : <a href="https://forms.gle/8rAvQkVDe5V5vZsg8" target="_blank" rel="noopener"><strong>Remplir le formulaire de confirmation</strong></a></p>
+    <p style="margin-top:24px;">Once your subscription is confirmed, fill out this short form to tell us about your business, city and category: <a href="https://forms.gle/8rAvQkVDe5V5vZsg8" target="_blank" rel="noopener"><strong>Fill out the confirmation form</strong></a></p>
 
     <p style="margin-top:32px; font-size:0.88rem; color:var(--ink-soft);">
-      Des questions ? Écrivez-nous via la page <a href="contact.html">Nous joindre</a>.
+      Questions? Reach us through the <a href="contact.html">Contact</a> page.
     </p>
 
   </div>
@@ -97,7 +102,7 @@
 
 <footer class="site">
   <div class="wrap">
-    Refuge Animalier — annuaire indépendant de services pour animaux au Québec.
+    Refuge Animalier — independent directory of emergency pet services in Quebec.
   </div>
 </footer>
 
@@ -116,7 +121,7 @@
         });
       },
       onApprove: function(data, actions) {
-        alert('Merci! Votre abonnement vedette est confirmé (ID: ' + data.subscriptionID + '). Veuillez maintenant remplir le formulaire ci-dessous pour nous indiquer votre commerce, votre ville et votre catégorie.');
+        alert('Thank you! Your featured subscription is confirmed (ID: ' + data.subscriptionID + '). Please fill out the form below to tell us about your business, city and category.');
       }
   }).render('#paypal-button-container-P-6G2763408Y986440XNKPBQBI');
 </script>
