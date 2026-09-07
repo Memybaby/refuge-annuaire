@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.refugeanimalier.ca/index.html</loc></url>
+  <url><loc>https://www.refugeanimalier.ca/index-en.html</loc></url>
   <url><loc>https://www.refugeanimalier.ca/services.html</loc></url>
   <url><loc>https://www.refugeanimalier.ca/ajouter-commerce.html</loc></url>
   <url><loc>https://www.refugeanimalier.ca/contact.html</loc></url>
@@ -115,4 +116,18 @@
   <url><loc>https://www.refugeanimalier.ca/veterinaire-sorel-tracy.html</loc></url>
   <url><loc>https://www.refugeanimalier.ca/toilettage-salon-sorel-tracy.html</loc></url>
   <url><loc>https://www.refugeanimalier.ca/parc-a-chiens-sorel-tracy.html</loc></url>
+  <url><loc>https://www.refugeanimalier.ca/montreal-en.html</loc></url>
+  <url><loc>https://www.refugeanimalier.ca/emergency-vet-montreal-en.html</loc></url>
+  <url><loc>https://www.refugeanimalier.ca/mobile-groomer-montreal-en.html</loc></url>
+  <url><loc>https://www.refugeanimalier.ca/emergency-boarding-montreal-en.html</loc></url>
+  <url><loc>https://www.refugeanimalier.ca/veterinarian-montreal-en.html</loc></url>
+  <url><loc>https://www.refugeanimalier.ca/pet-grooming-montreal-en.html</loc></url>
+  <url><loc>https://www.refugeanimalier.ca/dog-park-montreal-en.html</loc></url>
+  <url><loc>https://www.refugeanimalier.ca/gatineau-en.html</loc></url>
+  <url><loc>https://www.refugeanimalier.ca/emergency-vet-gatineau-en.html</loc></url>
+  <url><loc>https://www.refugeanimalier.ca/mobile-groomer-gatineau-en.html</loc></url>
+  <url><loc>https://www.refugeanimalier.ca/emergency-boarding-gatineau-en.html</loc></url>
+  <url><loc>https://www.refugeanimalier.ca/veterinarian-gatineau-en.html</loc></url>
+  <url><loc>https://www.refugeanimalier.ca/pet-grooming-gatineau-en.html</loc></url>
+  <url><loc>https://www.refugeanimalier.ca/dog-park-gatineau-en.html</loc></url>
 </urlset>
