@@ -82,9 +82,9 @@
       <li>Sans engagement — annulez en tout temps</li>
     </ul>
 
-    <p>Pour réserver votre place vedette, envoyez-nous un paiement mensuel via PayPal, puis écrivez-nous pour nous indiquer votre commerce, votre ville et votre catégorie.</p>
+    <p>Abonnez-vous ci-dessous — le paiement de 15$ sera prélevé automatiquement chaque mois via PayPal. Une fois confirmé, écrivez-nous pour nous indiquer votre commerce, votre ville et votre catégorie.</p>
 
-    <a class="btn call vedette-cta" href="https://www.paypal.com/ncp/payment/B2K5LWPXN2UKN" target="_blank" rel="noopener">Payer 15$ via PayPal</a>
+    <div id="paypal-button-container-P-6G2763408Y986440XNKPBQBI" style="max-width:250px; margin-top:20px;"></div>
 
     <p style="margin-top:32px; font-size:0.88rem; color:var(--ink-soft);">
       Des questions ? Écrivez-nous via la page <a href="contact.html">Nous joindre</a>.
@@ -98,6 +98,26 @@
     Refuge Animalier — annuaire indépendant de services pour animaux au Québec.
   </div>
 </footer>
+
+<script src="https://www.paypal.com/sdk/js?client-id=BAASPzA7_a2Lex776MAhbVLAdqwnwpXWzskTQrxOkqMJK23oFwewwynoDibG2LBnURobDKuts24vfR0Z4w&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          plan_id: 'P-6G2763408Y986440XNKPBQBI'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert('Merci! Votre abonnement vedette est confirmé (ID: ' + data.subscriptionID + '). Écrivez-nous pour indiquer votre commerce, votre ville et votre catégorie.');
+      }
+  }).render('#paypal-button-container-P-6G2763408Y986440XNKPBQBI');
+</script>
 
 </body>
 </html>
