@@ -22,15 +22,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
-  .article-content { max-width: 720px; }
-  .article-content h2 { margin-top: 32px; font-size: 1.3rem; }
-  .article-content p, .article-content li { color: var(--ink-soft); line-height: 1.7; font-size: 1.02rem; }
-  .article-content ul { padding-left: 20px; }
-  .article-content .callout {
-    background: #FBF3E9; border: 1px solid #EFD9B8; border-radius: var(--radius);
-    padding: 16px 18px; margin: 24px 0; font-size: 0.95rem;
+  .article-grid { display:flex; flex-direction:column; gap:16px; }
+  .article-card {
+    display:block; background:#fff; border:1px solid var(--line); border-left:4px solid var(--primary);
+    border-radius: var(--radius); padding:20px 22px; text-decoration:none; transition: transform .12s ease, box-shadow .12s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
   }
-  .article-meta { color: var(--ink-soft); font-size: 0.85rem; margin-bottom: 4px; }
+  .article-card:active { transform: scale(0.98); }
+  .article-kicker { font-size:0.78rem; text-transform:uppercase; letter-spacing:.04em; color:var(--primary); font-weight:600; margin-bottom:6px; display:block; }
+  .article-card h3 { margin:0 0 8px; font-size:1.15rem; color:var(--ink); }
+  .article-card p { margin:0 0 14px; color:var(--ink-soft); font-size:0.96rem; line-height:1.5; }
+  .article-cta { font-weight:600; color:var(--primary); font-size:0.92rem; }
+  .article-card .article-cta::after { content:" →"; }
 </style>
 </head>
 <body>
@@ -60,48 +63,68 @@
   </div>
 </section>
 
-<section class="services" style="padding-top:8px;">
+<section style="padding-top:8px; padding-bottom:64px;">
   <div class="wrap">
-    <div class="grid" style="grid-template-columns:1fr;">
-      <a class="service-card" href="mon-chien-a-mange-du-chocolat.html">
+    <div class="article-grid">
+      <a class="article-card" href="mon-chien-a-mange-du-chocolat.html">
+        <span class="article-kicker">Urgence alimentaire</span>
         <h3>Mon chien a mangé du chocolat, que faire ?</h3>
         <p>Votre chien a mangé du chocolat ? Voici les signes à surveiller et pourquoi il faut agir rapidement.</p>
+        <span class="article-cta">Lire l'article</span>
       </a>
-      <a class="service-card" href="signes-urgence-veterinaire.html">
+      <a class="article-card" href="signes-urgence-veterinaire.html">
+        <span class="article-kicker">Reconnaître une urgence</span>
         <h3>Signes qu'il faut aller en urgence chez le vétérinaire</h3>
         <p>Comment savoir si l'état de votre animal justifie une visite d'urgence plutôt qu'un rendez-vous régulier.</p>
+        <span class="article-cta">Lire l'article</span>
       </a>
-      <a class="service-card" href="cout-urgence-veterinaire-quebec.html">
+      <a class="article-card" href="cout-urgence-veterinaire-quebec.html">
+        <span class="article-kicker">Comprendre les coûts</span>
         <h3>Combien coûte une visite vétérinaire d'urgence au Québec ?</h3>
         <p>Aperçu des coûts typiques d'une visite d'urgence vétérinaire au Québec, et comment vous préparer.</p>
+        <span class="article-cta">Lire l'article</span>
       </a>
-      <a class="service-card" href="calmer-chien-anxieux-toilettage.html">
+      <a class="article-card" href="calmer-chien-anxieux-toilettage.html">
+        <span class="article-kicker">Bien-être animal</span>
         <h3>Comment calmer un chien anxieux au toilettage</h3>
         <p>Conseils pratiques pour réduire le stress de votre chien avant et pendant une séance de toilettage.</p>
+        <span class="article-cta">Lire l'article</span>
       </a>
-      <a class="service-card" href="chat-narrete-pas-de-manger.html">
+      <a class="article-card" href="chat-narrete-pas-de-manger.html">
+        <span class="article-kicker">Santé féline</span>
         <h3>Que faire si mon chat arrête de manger</h3>
         <p>Perte d'appétit chez le chat : pourquoi c'est préoccupant et quand consulter un vétérinaire.</p>
+        <span class="article-cta">Lire l'article</span>
       </a>
-      <a class="service-card" href="chien-pique-abeille-guepe.html">
+      <a class="article-card" href="chien-pique-abeille-guepe.html">
+        <span class="article-kicker">Urgence saisonnière</span>
         <h3>Mon chien s'est fait piquer par une abeille ou une guêpe</h3>
         <p>Que faire si votre chien se fait piquer, et quand une piqûre devient une urgence.</p>
+        <span class="article-cta">Lire l'article</span>
       </a>
-      <a class="service-card" href="trousse-premiers-soins-animal.html">
+      <a class="article-card" href="trousse-premiers-soins-animal.html">
+        <span class="article-kicker">Prévention</span>
         <h3>Comment préparer une trousse de premiers soins pour son animal</h3>
         <p>La liste complète du nécessaire pour être prêt en cas de petit bobo ou d'urgence animale.</p>
+        <span class="article-cta">Lire l'article</span>
       </a>
-      <a class="service-card" href="coup-de-chaleur-chien-signes.html">
+      <a class="article-card" href="coup-de-chaleur-chien-signes.html">
+        <span class="article-kicker">Urgence saisonnière</span>
         <h3>Coup de chaleur chez le chien : signes et quoi faire</h3>
         <p>Reconnaître un coup de chaleur chez le chien et les gestes à faire en attendant les secours.</p>
+        <span class="article-cta">Lire l'article</span>
       </a>
-      <a class="service-card" href="aliments-dangereux-pour-chiens.html">
+      <a class="article-card" href="aliments-dangereux-pour-chiens.html">
+        <span class="article-kicker">Prévention alimentaire</span>
         <h3>Aliments dangereux pour les chiens : la liste complète</h3>
         <p>Les aliments courants à ne jamais donner à votre chien, et pourquoi ils sont toxiques.</p>
+        <span class="article-cta">Lire l'article</span>
       </a>
-      <a class="service-card" href="choisir-pension-urgence-animal.html">
+      <a class="article-card" href="choisir-pension-urgence-animal.html">
+        <span class="article-kicker">Bien choisir</span>
         <h3>Comment choisir une pension d'urgence pour son animal</h3>
         <p>Les critères à vérifier avant de confier votre animal à une pension d'urgence.</p>
+        <span class="article-cta">Lire l'article</span>
       </a>
     </div>
   </div>
