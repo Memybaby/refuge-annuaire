@@ -13,7 +13,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mon chien s'est fait piquer par une abeille ou une guêpe — Refuge Animalier</title>
-<meta name="description" content="Que faire si votre chien se fait piquer, et quand une piqûre devient une urgence.">
+<meta name="description" content="Urgence saisonnière">
 <link rel="canonical" href="https://www.refugeanimalier.ca/chien-pique-abeille-guepe.html">
 <link rel="alternate" hreflang="fr-ca" href="https://www.refugeanimalier.ca/chien-pique-abeille-guepe.html">
 <link rel="alternate" hreflang="en-ca" href="https://www.refugeanimalier.ca/chien-pique-abeille-guepe-en.html">
@@ -22,15 +22,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
+  :root { --accent: #CC9A2A; --tint: #F8F1DA; --accent-dark: #CC9A2A; }
+  
   .article-content { max-width: 720px; }
-  .article-content h2 { margin-top: 32px; font-size: 1.3rem; }
+  .article-hero-row { display:flex; align-items:center; gap:18px; margin-bottom:6px; }
+  .article-content h2 {
+    margin-top: 36px; font-size: 1.25rem; padding-left:14px; border-left:4px solid var(--accent);
+    color: var(--ink);
+  }
   .article-content p, .article-content li { color: var(--ink-soft); line-height: 1.7; font-size: 1.02rem; }
   .article-content ul { padding-left: 20px; }
   .article-content .callout {
-    background: #FBF3E9; border: 1px solid #EFD9B8; border-radius: var(--radius);
+    background: var(--tint); border: 1px solid var(--accent); border-radius: var(--radius);
     padding: 16px 18px; margin: 24px 0; font-size: 0.95rem;
   }
   .article-meta { color: var(--ink-soft); font-size: 0.85rem; margin-bottom: 4px; }
+  .article-cta-box {
+    margin-top:36px; padding:18px 20px; border-radius:var(--radius); background:var(--tint);
+    border:1px solid var(--accent);
+  }
+  .article-cta-box a { color:var(--accent-dark); font-weight:700; text-decoration:none; }
+
 </style>
 </head>
 <body>
@@ -54,8 +66,13 @@
 
 <section class="ville-hero">
   <div class="wrap">
-    <span class="kicker">Urgence saisonnière</span>
-    <h1>Mon chien s'est fait piquer par une abeille ou une guêpe</h1>
+    <div class="article-hero-row">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;min-width:72px;border-radius:50%;background:#CC9A2A;font-size:36px;line-height:1;">🐝</span>
+      <div>
+        <span class="kicker" style="color:#CC9A2A;">Urgence saisonnière</span>
+        <h1 style="margin-top:2px;">Mon chien s'est fait piquer par une abeille ou une guêpe</h1>
+      </div>
+    </div>
     <p class="article-meta">Mis à jour : septembre 2026</p>
   </div>
 </section>
@@ -63,30 +80,26 @@
 <section style="padding: 8px 0 64px;">
   <div class="wrap article-content">
 
-    <p>La plupart des piqûres sont bénignes chez le chien, mais certaines réactions peuvent devenir sérieuses rapidement — voici comment réagir.</p>
-
-    <h2>Réaction normale</h2>
-    <p>Une petite enflure locale, une légère douleur, et parfois un léchage insistant de la zone touchée. Cela se résorbe généralement en quelques heures.</p>
-
-    <h2>Signes de réaction allergique sévère — urgence</h2>
+    <p>La plupart des piqûres sont bénignes chez le chien, mais certaines réactions peuvent devenir sérieuses rapidement.</p>
+    <h2>🐝 Réaction normale</h2>
+    <p>Une petite enflure locale, une légère douleur, et parfois un léchage insistant de la zone touchée.</p>
+    <h2>🚨 Signes de réaction allergique sévère</h2>
     <ul>
       <li>Enflure du visage, du museau ou de la gorge</li>
       <li>Difficulté à respirer</li>
       <li>Vomissements ou diarrhée soudains</li>
       <li>Faiblesse extrême ou effondrement</li>
-      <li>Urticaire (bosses) sur tout le corps</li>
     </ul>
-    <p>Ces signes peuvent apparaître en quelques minutes à quelques heures après la piqûre. Si vous les observez, dirigez-vous immédiatement vers une clinique d'urgence.</p>
-
-    <h2>Que faire pour une piqûre normale</h2>
+    <h2>🩹 Que faire pour une piqûre normale</h2>
     <ul>
-      <li>Retirez le dard s'il est visible (piqûre d'abeille) en le grattant délicatement, sans pincer</li>
-      <li>Appliquez une compresse froide sur la zone enflée</li>
+      <li>Retirez le dard s'il est visible, en le grattant délicatement</li>
+      <li>Appliquez une compresse froide</li>
       <li>Surveillez votre chien pendant les heures suivantes</li>
     </ul>
-
-    <p><a href="services.html" style="color:var(--primary); font-weight:600;">Trouvez un vétérinaire de garde près de chez vous →</a></p>
     
+    <div class="article-cta-box">
+      <a href="services.html">Trouvez un vétérinaire de garde près de chez vous →</a>
+    </div>
   </div>
 </section>
 

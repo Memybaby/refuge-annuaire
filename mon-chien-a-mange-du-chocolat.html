@@ -13,7 +13,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mon chien a mangé du chocolat, que faire — Refuge Animalier</title>
-<meta name="description" content="Votre chien a mangé du chocolat ? Voici les signes à surveiller et pourquoi il faut agir rapidement.">
+<meta name="description" content="Urgence alimentaire">
 <link rel="canonical" href="https://www.refugeanimalier.ca/mon-chien-a-mange-du-chocolat.html">
 <link rel="alternate" hreflang="fr-ca" href="https://www.refugeanimalier.ca/mon-chien-a-mange-du-chocolat.html">
 <link rel="alternate" hreflang="en-ca" href="https://www.refugeanimalier.ca/mon-chien-a-mange-du-chocolat-en.html">
@@ -22,15 +22,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
+  :root { --accent: #C97B4A; --tint: #F7EBE1; --accent-dark: #C97B4A; }
+  
   .article-content { max-width: 720px; }
-  .article-content h2 { margin-top: 32px; font-size: 1.3rem; }
+  .article-hero-row { display:flex; align-items:center; gap:18px; margin-bottom:6px; }
+  .article-content h2 {
+    margin-top: 36px; font-size: 1.25rem; padding-left:14px; border-left:4px solid var(--accent);
+    color: var(--ink);
+  }
   .article-content p, .article-content li { color: var(--ink-soft); line-height: 1.7; font-size: 1.02rem; }
   .article-content ul { padding-left: 20px; }
   .article-content .callout {
-    background: #FBF3E9; border: 1px solid #EFD9B8; border-radius: var(--radius);
+    background: var(--tint); border: 1px solid var(--accent); border-radius: var(--radius);
     padding: 16px 18px; margin: 24px 0; font-size: 0.95rem;
   }
   .article-meta { color: var(--ink-soft); font-size: 0.85rem; margin-bottom: 4px; }
+  .article-cta-box {
+    margin-top:36px; padding:18px 20px; border-radius:var(--radius); background:var(--tint);
+    border:1px solid var(--accent);
+  }
+  .article-cta-box a { color:var(--accent-dark); font-weight:700; text-decoration:none; }
+
 </style>
 </head>
 <body>
@@ -54,8 +66,13 @@
 
 <section class="ville-hero">
   <div class="wrap">
-    <span class="kicker">Urgence alimentaire</span>
-    <h1>Mon chien a mangé du chocolat, que faire ?</h1>
+    <div class="article-hero-row">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;min-width:72px;border-radius:50%;background:#C97B4A;font-size:36px;line-height:1;">🍫</span>
+      <div>
+        <span class="kicker" style="color:#C97B4A;">Urgence alimentaire</span>
+        <h1 style="margin-top:2px;">Mon chien a mangé du chocolat, que faire ?</h1>
+      </div>
+    </div>
     <p class="article-meta">Mis à jour : septembre 2026</p>
   </div>
 </section>
@@ -64,8 +81,7 @@
   <div class="wrap article-content">
 
     <p>Le chocolat contient de la théobromine, une substance que les chiens digèrent beaucoup plus lentement que les humains — c'est ce qui le rend toxique pour eux. Plus le chocolat est foncé (chocolat noir, cacao en poudre, chocolat de cuisson), plus le risque est élevé.</p>
-
-    <h2>Signes à surveiller</h2>
+    <h2>🍫 Signes à surveiller</h2>
     <ul>
       <li>Vomissements et diarrhée</li>
       <li>Agitation ou halètement excessif</li>
@@ -74,16 +90,13 @@
       <li>Soif excessive</li>
     </ul>
     <p>Les symptômes peuvent apparaître entre 6 et 12 heures après l'ingestion, et durer jusqu'à 3 jours dans les cas graves.</p>
-
-    <div class="callout">
-      <strong>Ce qui compte :</strong> la quantité de chocolat, le type (plus foncé = plus dangereux), et le poids de votre chien. Un petit chien qui mange une grande quantité de chocolat noir est en bien plus grand danger qu'un gros chien qui lèche un peu de chocolat au lait.
-    </div>
-
-    <h2>Quoi faire maintenant</h2>
-    <p>N'attendez pas que les symptômes apparaissent. Appelez immédiatement un vétérinaire ou une clinique d'urgence pour évaluer la situation — ils vous demanderont le poids de votre chien, le type et la quantité de chocolat ingéré. Ne faites pas vomir votre chien sans l'avis d'un professionnel : dans certains cas, ce n'est pas recommandé.</p>
-
-    <p><a href="services.html" style="color:var(--primary); font-weight:600;">Trouvez un vétérinaire de garde près de chez vous →</a></p>
+    <div class="callout"><strong>Ce qui compte :</strong> la quantité de chocolat, le type (plus foncé = plus dangereux), et le poids de votre chien.</div>
+    <h2>📞 Quoi faire maintenant</h2>
+    <p>N'attendez pas que les symptômes apparaissent. Appelez immédiatement un vétérinaire ou une clinique d'urgence pour évaluer la situation. Ne faites pas vomir votre chien sans l'avis d'un professionnel.</p>
     
+    <div class="article-cta-box">
+      <a href="services.html">Trouvez un vétérinaire de garde près de chez vous →</a>
+    </div>
   </div>
 </section>
 

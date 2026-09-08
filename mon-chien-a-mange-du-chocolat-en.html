@@ -13,7 +13,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Dog Ate Chocolate, What Do I Do — Refuge Animalier</title>
-<meta name="description" content="Your dog ate chocolate? Here are the signs to watch for and why you need to act quickly.">
+<meta name="description" content="Food Emergency">
 <link rel="canonical" href="https://www.refugeanimalier.ca/mon-chien-a-mange-du-chocolat-en.html">
 <link rel="alternate" hreflang="fr-ca" href="https://www.refugeanimalier.ca/mon-chien-a-mange-du-chocolat.html">
 <link rel="alternate" hreflang="en-ca" href="https://www.refugeanimalier.ca/mon-chien-a-mange-du-chocolat-en.html">
@@ -22,15 +22,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
+  :root { --accent: #C97B4A; --tint: #F7EBE1; --accent-dark: #C97B4A; }
+  
   .article-content { max-width: 720px; }
-  .article-content h2 { margin-top: 32px; font-size: 1.3rem; }
+  .article-hero-row { display:flex; align-items:center; gap:18px; margin-bottom:6px; }
+  .article-content h2 {
+    margin-top: 36px; font-size: 1.25rem; padding-left:14px; border-left:4px solid var(--accent);
+    color: var(--ink);
+  }
   .article-content p, .article-content li { color: var(--ink-soft); line-height: 1.7; font-size: 1.02rem; }
   .article-content ul { padding-left: 20px; }
   .article-content .callout {
-    background: #FBF3E9; border: 1px solid #EFD9B8; border-radius: var(--radius);
+    background: var(--tint); border: 1px solid var(--accent); border-radius: var(--radius);
     padding: 16px 18px; margin: 24px 0; font-size: 0.95rem;
   }
   .article-meta { color: var(--ink-soft); font-size: 0.85rem; margin-bottom: 4px; }
+  .article-cta-box {
+    margin-top:36px; padding:18px 20px; border-radius:var(--radius); background:var(--tint);
+    border:1px solid var(--accent);
+  }
+  .article-cta-box a { color:var(--accent-dark); font-weight:700; text-decoration:none; }
+
 </style>
 </head>
 <body>
@@ -54,8 +66,13 @@
 
 <section class="ville-hero">
   <div class="wrap">
-    <span class="kicker">Food Emergency</span>
-    <h1>My Dog Ate Chocolate, What Do I Do?</h1>
+    <div class="article-hero-row">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;min-width:72px;border-radius:50%;background:#C97B4A;font-size:36px;line-height:1;">🍫</span>
+      <div>
+        <span class="kicker" style="color:#C97B4A;">Food Emergency</span>
+        <h1 style="margin-top:2px;">My Dog Ate Chocolate, What Do I Do?</h1>
+      </div>
+    </div>
     <p class="article-meta">Updated: September 2026</p>
   </div>
 </section>
@@ -63,9 +80,8 @@
 <section style="padding: 8px 0 64px;">
   <div class="wrap article-content">
 
-    <p>Chocolate contains theobromine, a substance dogs metabolize much more slowly than humans do — that's what makes it toxic to them. The darker the chocolate (dark chocolate, cocoa powder, baking chocolate), the higher the risk.</p>
-
-    <h2>Signs to watch for</h2>
+    <p>Chocolate contains theobromine, a substance dogs metabolize much more slowly than humans — that's what makes it toxic to them. The darker the chocolate, the higher the risk.</p>
+    <h2>🍫 Signs to watch for</h2>
     <ul>
       <li>Vomiting and diarrhea</li>
       <li>Restlessness or excessive panting</li>
@@ -74,16 +90,13 @@
       <li>Excessive thirst</li>
     </ul>
     <p>Symptoms can appear 6 to 12 hours after ingestion, and can last up to 3 days in severe cases.</p>
-
-    <div class="callout">
-      <strong>What matters:</strong> the amount of chocolate, the type (darker = more dangerous), and your dog's weight. A small dog eating a large amount of dark chocolate is at much greater risk than a large dog licking a bit of milk chocolate.
-    </div>
-
-    <h2>What to do right now</h2>
-    <p>Don't wait for symptoms to appear. Call an emergency vet or clinic immediately to assess the situation — they'll ask for your dog's weight, the type and amount of chocolate ingested. Don't induce vomiting without professional advice: in some cases, it's not recommended.</p>
-
-    <p><a href="services-en.html" style="color:var(--primary); font-weight:600;">Find an emergency vet near you →</a></p>
+    <div class="callout"><strong>What matters:</strong> the amount of chocolate, the type (darker = more dangerous), and your dog's weight.</div>
+    <h2>📞 What to do right now</h2>
+    <p>Don't wait for symptoms to appear. Call an emergency vet or clinic immediately. Don't induce vomiting without professional advice.</p>
     
+    <div class="article-cta-box">
+      <a href="services-en.html">Find an emergency vet near you →</a>
+    </div>
   </div>
 </section>
 

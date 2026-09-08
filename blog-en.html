@@ -24,16 +24,19 @@
 <style>
   .article-grid { display:flex; flex-direction:column; gap:16px; }
   .article-card {
-    display:block; background:#fff; border:1px solid var(--line); border-left:4px solid var(--primary);
-    border-radius: var(--radius); padding:20px 22px; text-decoration:none; transition: transform .12s ease, box-shadow .12s ease;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    display:flex; align-items:center; gap:16px; background:#fff; border:1px solid var(--line);
+    border-left-width:5px; border-left-style:solid;
+    border-radius: var(--radius); padding:16px 20px; text-decoration:none;
+    transition: transform .12s ease, box-shadow .12s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
   }
   .article-card:active { transform: scale(0.98); }
-  .article-kicker { font-size:0.78rem; text-transform:uppercase; letter-spacing:.04em; color:var(--primary); font-weight:600; margin-bottom:6px; display:block; }
-  .article-card h3 { margin:0 0 8px; font-size:1.15rem; color:var(--ink); }
-  .article-card p { margin:0 0 14px; color:var(--ink-soft); font-size:0.96rem; line-height:1.5; }
-  .article-cta { font-weight:600; color:var(--primary); font-size:0.92rem; }
-  .article-card .article-cta::after { content:" →"; }
+  .article-text { flex:1; min-width:0; }
+  .article-kicker { font-size:0.76rem; text-transform:uppercase; letter-spacing:.04em; font-weight:700; margin-bottom:4px; display:block; }
+  .article-card h3 { margin:0 0 6px; font-size:1.1rem; color:var(--ink); line-height:1.3; }
+  .article-card p { margin:0 0 10px; color:var(--ink-soft); font-size:0.93rem; line-height:1.45; }
+  .article-cta { font-weight:700; font-size:0.88rem; }
+  .article-cta::after { content:" →"; }
 </style>
 </head>
 <body>
@@ -66,65 +69,95 @@
 <section style="padding-top:8px; padding-bottom:64px;">
   <div class="wrap">
     <div class="article-grid">
-      <a class="article-card" href="mon-chien-a-mange-du-chocolat-en.html">
-        <span class="article-kicker">Food Emergency</span>
-        <h3>My Dog Ate Chocolate, What Do I Do?</h3>
-        <p>Your dog ate chocolate? Here are the signs to watch for and why you need to act quickly.</p>
-        <span class="article-cta">Read the article</span>
+      <a class="article-card" href="mon-chien-a-mange-du-chocolat-en.html" style="border-left-color:#C97B4A;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;min-width:60px;border-radius:50%;background:#C97B4A;font-size:30px;line-height:1;">🍫</span>
+        <span class="article-text">
+          <span class="article-kicker" style="color:#C97B4A;">Food Emergency</span>
+          <h3>My Dog Ate Chocolate, What Do I Do?</h3>
+          <p>Your dog ate chocolate? Here are the signs to watch for and why you need to act quickly.</p>
+          <span class="article-cta" style="color:#C97B4A;">Read the article</span>
+        </span>
       </a>
-      <a class="article-card" href="signes-urgence-veterinaire-en.html">
-        <span class="article-kicker">Recognizing an emergency</span>
-        <h3>Signs You Need an Emergency Vet</h3>
-        <p>How to know if your pet's condition calls for an emergency visit rather than a routine appointment.</p>
-        <span class="article-cta">Read the article</span>
+      <a class="article-card" href="signes-urgence-veterinaire-en.html" style="border-left-color:#E8604C;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;min-width:60px;border-radius:50%;background:#E8604C;font-size:30px;line-height:1;">🚨</span>
+        <span class="article-text">
+          <span class="article-kicker" style="color:#E8604C;">Recognizing an emergency</span>
+          <h3>Signs You Need an Emergency Vet</h3>
+          <p>How to know if your pet's condition calls for an emergency visit rather than a routine appointment.</p>
+          <span class="article-cta" style="color:#E8604C;">Read the article</span>
+        </span>
       </a>
-      <a class="article-card" href="cout-urgence-veterinaire-quebec-en.html">
-        <span class="article-kicker">Understanding costs</span>
-        <h3>How Much Does an Emergency Vet Visit Cost in Quebec?</h3>
-        <p>A look at typical emergency vet costs in Quebec, and how to prepare.</p>
-        <span class="article-cta">Read the article</span>
+      <a class="article-card" href="cout-urgence-veterinaire-quebec-en.html" style="border-left-color:#C99A2E;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;min-width:60px;border-radius:50%;background:#C99A2E;font-size:30px;line-height:1;">💰</span>
+        <span class="article-text">
+          <span class="article-kicker" style="color:#C99A2E;">Understanding costs</span>
+          <h3>How Much Does an Emergency Vet Visit Cost in Quebec?</h3>
+          <p>A look at typical emergency vet costs in Quebec, and how to prepare.</p>
+          <span class="article-cta" style="color:#C99A2E;">Read the article</span>
+        </span>
       </a>
-      <a class="article-card" href="calmer-chien-anxieux-toilettage-en.html">
-        <span class="article-kicker">Pet wellbeing</span>
-        <h3>How to Calm an Anxious Dog at the Groomer</h3>
-        <p>Practical tips to reduce your dog's stress before and during a grooming session.</p>
-        <span class="article-cta">Read the article</span>
+      <a class="article-card" href="calmer-chien-anxieux-toilettage-en.html" style="border-left-color:#5D82A6;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;min-width:60px;border-radius:50%;background:#5D82A6;font-size:30px;line-height:1;">🛁</span>
+        <span class="article-text">
+          <span class="article-kicker" style="color:#5D82A6;">Pet wellbeing</span>
+          <h3>How to Calm an Anxious Dog at the Groomer</h3>
+          <p>Practical tips to reduce your dog's stress before and during a grooming session.</p>
+          <span class="article-cta" style="color:#5D82A6;">Read the article</span>
+        </span>
       </a>
-      <a class="article-card" href="chat-narrete-pas-de-manger-en.html">
-        <span class="article-kicker">Feline health</span>
-        <h3>What to Do If Your Cat Stops Eating</h3>
-        <p>Loss of appetite in cats: why it's concerning and when to see a vet.</p>
-        <span class="article-cta">Read the article</span>
+      <a class="article-card" href="chat-narrete-pas-de-manger-en.html" style="border-left-color:#6E9169;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;min-width:60px;border-radius:50%;background:#6E9169;font-size:30px;line-height:1;">🐱</span>
+        <span class="article-text">
+          <span class="article-kicker" style="color:#6E9169;">Feline health</span>
+          <h3>What to Do If Your Cat Stops Eating</h3>
+          <p>Loss of appetite in cats: why it's concerning and when to see a vet.</p>
+          <span class="article-cta" style="color:#6E9169;">Read the article</span>
+        </span>
       </a>
-      <a class="article-card" href="chien-pique-abeille-guepe-en.html">
-        <span class="article-kicker">Seasonal emergency</span>
-        <h3>My Dog Got Stung by a Bee or Wasp</h3>
-        <p>What to do if your dog gets stung, and when a sting becomes an emergency.</p>
-        <span class="article-cta">Read the article</span>
+      <a class="article-card" href="chien-pique-abeille-guepe-en.html" style="border-left-color:#CC9A2A;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;min-width:60px;border-radius:50%;background:#CC9A2A;font-size:30px;line-height:1;">🐝</span>
+        <span class="article-text">
+          <span class="article-kicker" style="color:#CC9A2A;">Seasonal emergency</span>
+          <h3>My Dog Got Stung by a Bee or Wasp</h3>
+          <p>What to do if your dog gets stung, and when a sting becomes an emergency.</p>
+          <span class="article-cta" style="color:#CC9A2A;">Read the article</span>
+        </span>
       </a>
-      <a class="article-card" href="trousse-premiers-soins-animal-en.html">
-        <span class="article-kicker">Prevention</span>
-        <h3>How to Build a Pet First Aid Kit</h3>
-        <p>The complete checklist to be ready for a minor injury or a pet emergency.</p>
-        <span class="article-cta">Read the article</span>
+      <a class="article-card" href="trousse-premiers-soins-animal-en.html" style="border-left-color:#437F7B;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;min-width:60px;border-radius:50%;background:#437F7B;font-size:30px;line-height:1;">🩹</span>
+        <span class="article-text">
+          <span class="article-kicker" style="color:#437F7B;">Prevention</span>
+          <h3>How to Build a Pet First Aid Kit</h3>
+          <p>The complete checklist to be ready for a minor injury or a pet emergency.</p>
+          <span class="article-cta" style="color:#437F7B;">Read the article</span>
+        </span>
       </a>
-      <a class="article-card" href="coup-de-chaleur-chien-signes-en.html">
-        <span class="article-kicker">Seasonal emergency</span>
-        <h3>Heatstroke in Dogs: Signs and What to Do</h3>
-        <p>Recognizing heatstroke in dogs and the steps to take while getting help.</p>
-        <span class="article-cta">Read the article</span>
+      <a class="article-card" href="coup-de-chaleur-chien-signes-en.html" style="border-left-color:#D66E33;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;min-width:60px;border-radius:50%;background:#D66E33;font-size:30px;line-height:1;">☀️</span>
+        <span class="article-text">
+          <span class="article-kicker" style="color:#D66E33;">Seasonal emergency</span>
+          <h3>Heatstroke in Dogs: Signs and What to Do</h3>
+          <p>Recognizing heatstroke in dogs and the steps to take while getting help.</p>
+          <span class="article-cta" style="color:#D66E33;">Read the article</span>
+        </span>
       </a>
-      <a class="article-card" href="aliments-dangereux-pour-chiens-en.html">
-        <span class="article-kicker">Food safety</span>
-        <h3>Dog-Toxic Foods: The Complete List</h3>
-        <p>Common foods you should never give your dog, and why they're toxic.</p>
-        <span class="article-cta">Read the article</span>
+      <a class="article-card" href="aliments-dangereux-pour-chiens-en.html" style="border-left-color:#B5423A;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;min-width:60px;border-radius:50%;background:#B5423A;font-size:30px;line-height:1;">⚠️</span>
+        <span class="article-text">
+          <span class="article-kicker" style="color:#B5423A;">Food safety</span>
+          <h3>Dog-Toxic Foods: The Complete List</h3>
+          <p>Common foods you should never give your dog, and why they're toxic.</p>
+          <span class="article-cta" style="color:#B5423A;">Read the article</span>
+        </span>
       </a>
-      <a class="article-card" href="choisir-pension-urgence-animal-en.html">
-        <span class="article-kicker">Making the right choice</span>
-        <h3>How to Choose Emergency Pet Boarding</h3>
-        <p>What to check before trusting your pet to an emergency boarding facility.</p>
-        <span class="article-cta">Read the article</span>
+      <a class="article-card" href="choisir-pension-urgence-animal-en.html" style="border-left-color:#82699B;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;min-width:60px;border-radius:50%;background:#82699B;font-size:30px;line-height:1;">🏠</span>
+        <span class="article-text">
+          <span class="article-kicker" style="color:#82699B;">Making the right choice</span>
+          <h3>How to Choose Emergency Pet Boarding</h3>
+          <p>What to check before trusting your pet to an emergency boarding facility.</p>
+          <span class="article-cta" style="color:#82699B;">Read the article</span>
+        </span>
       </a>
     </div>
   </div>
